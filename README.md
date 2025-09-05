@@ -1,14 +1,10 @@
 <!-- Banner with waving hand -->
-# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px">  
-# 🌸✨ <span style="font-size:38px; font-weight:bold;"> Zanib Zubair </span> ✨🌸  
+# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px"> <span style="font-size:32px; font-weight:bold;">Hey, I am Zanib Zubair</span> 
+
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=FF69B4&center=true&vCenter=true&width=500&lines=Software+Engineering+Student;Full-Stack+Developer+in+Progress;Passionate+about+Innovation+%26+Creativity" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=600&color=FF69B4&center=true&vCenter=true&width=1000&lines=Software+Engineering+Student;Full-Stack+Developer+in+Progress;Passionate+about+Innovation+%26+Creativity;Turning+ideas+into+impactful+digital+solutions" alt="Typing Animation" />
 </p>
-
-✨ _"Turning ideas into impactful digital solutions."_  
-
----
 
 ## 💻 Tech Stack  
 <p align="center">
@@ -25,7 +21,7 @@
 ---
 
 ## 🌸 Interests  
-📚 Book reading | 💪 Women in Tech | 🧶 Crochet & crafts | 🎨 Creative projects  
+📚 Book reading | 💪 Women in Tech | 🎨 Creative projects  
 
 ---
 
