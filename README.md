@@ -1,43 +1,35 @@
 <!-- Banner with waving hand -->
-#  <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px"> *Hey! I am Zanib Zubair* 
-
+# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="40px">  
+# 🌸✨ <span style="font-size:38px; font-weight:bold;"> Zanib Zubair </span> ✨🌸  
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=600&color=FF69B4&center=true&vCenter=true&width=600&lines=Software+Engineering+Student;Full-Stack+Developer+in+Progress;Passionate+about+Innovation+%26+Creativity;Turning+ideas+into+impactful+digital+solutions." alt="Typing Animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=FF69B4&center=true&vCenter=true&width=500&lines=Software+Engineering+Student;Full-Stack+Developer+in+Progress;Passionate+about+Innovation+%26+Creativity" alt="Typing Animation" />
 </p>
 
-## 💻 Tech Stack
+✨ _"Turning ideas into impactful digital solutions."_  
+
+---
+
+## 💻 Tech Stack  
 <p align="center">
   <img src="https://skillicons.dev/icons?i=js,python,cpp,react,tailwind,git,vscode,figma" />
 </p>
 
 ---
 
-## 🚀 Projects
-🌟 <a href="https://github.com/zanib-sheikh/Portfolio">Portfolio Website</a> – Responsive portfolio  
-⚡ <a href="https://github.com/zanib-sheikh/fantasyareenaleague">Fantasy Arena League</a> – Fantasy sports platform  
-📂 More on my <a href="https://github.com/zanib-sheikh">GitHub</a>
+## 🚀 Projects  
+🌟 [Portfolio Website](https://github.com/zanib-sheikh/Portfolio) – Responsive portfolio  
+⚡ [Fantasy Arena League](https://github.com/zanib-sheikh/fantasyareenaleague) – Fantasy sports platform  
+📂 More on my [GitHub](https://github.com/zanib-sheikh)  
 
 ---
 
-## 🌸 Interests
-📚 Book reading | 💪 Women in Tech | 🧶 Crochet & crafts | 🎨 Creative projects
+## 🌸 Interests  
+📚 Book reading | 💪 Women in Tech | 🧶 Crochet & crafts | 🎨 Creative projects  
 
 ---
 
-## ✨ Daily Motivation
-💡 *"Loading today's inspiration..."*
-
-<!--STARTS_HERE_QUOTE_README-->
-<!--ENDS_HERE_QUOTE_README-->
-
-<p align="center">
-  <img src="https://i.imgur.com/ebF0F7M.gif" width="200px" alt="sparkle divider"/>
-</p>
-
----
-
-## 📊 GitHub Stats
+## 📊 GitHub Stats  
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=zanib-sheikh&show_icons=true&theme=rose_pine" height="150"/>
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=zanib-sheikh&layout=compact&theme=rose_pine" height="150"/>
@@ -45,19 +37,30 @@
 
 ---
 
-## 💌 Connect with Me
+## ✨ Daily Motivation  
+
+💡 <!--START_QUOTE--> "Loading today's inspiration..." <!--END_QUOTE-->
+
 <p align="center">
-  <a href="https://www.linkedin.com/in/zanibzubair/">
-    <img src="https://img.shields.io/badge/LinkedIn-FF69B4?style=for-the-badge&logo=linkedin&logoColor=white" />
+  <img src="https://media.tenor.com/kz8XJtZ2uUkAAAAi/sparkles-stars.gif" width="200">
+</p>
+
+---
+
+## 💌 Connect with Me  
+<p align="center">
+  <a href="mailto:zanibzubair@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
   </a>
-  <a href="mailto:zanib4902@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-F06292?style=for-the-badge&logo=gmail&logoColor=white" />
+  <a href="https://www.linkedin.com/in/zanibzubair/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2" />
   </a>
   <a href="https://lnkd.in/dnUg8RN8">
-    <img src="https://img.shields.io/badge/Portfolio-FFB6C1?style=for-the-badge&logo=fire&logoColor=white" />
+    <img src="https://img.shields.io/badge/Portfolio-FF69B4?style=for-the-badge&logo=sparkles&logoColor=white&labelColor=FF69B4" />
   </a>
 </p>
 
 ---
 
 <p align="center">🌸 <b>Code • Create • Inspire</b> 🌸</p>
+
