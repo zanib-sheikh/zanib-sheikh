@@ -21,7 +21,7 @@
 - 🏆 **[Fantasy Arena League](https://fantasyareenaleague.vercel.app/)**  
   *An interactive fantasy sports platform where players can join leagues, track stats, and compete.*  
 
--  ✨ **[Sawtify](https://fantasyareenaleague.vercel.app/)**  
+-  ✨ **[Sawtify](https://saawtify.vercel.app/)**  
   *AI calling agent that handles calls and scheduling*  
 
 - 📂 **[More on GitHub](https://github.com/zanib-sheikh)**  
