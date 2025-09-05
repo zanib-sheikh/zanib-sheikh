@@ -14,9 +14,19 @@
 ---
 
 ## 🚀 Projects  
-🌟 [Portfolio Website](https://github.com/zanib-sheikh/Portfolio) – Responsive portfolio  
-⚡ [Fantasy Arena League](https://github.com/zanib-sheikh/fantasyareenaleague) – Fantasy sports platform  
-📂 More on my [GitHub](https://github.com/zanib-sheikh)  
+
+- 🌐 **[Portfolio Website](https://myportfolio-zanib-zubairs-projects.vercel.app/)**  
+  *A sleek and responsive portfolio to showcase my journey, skills, and creative work.*  
+
+- 🏆 **[Fantasy Arena League](https://fantasyareenaleague.vercel.app/)**  
+  *An interactive fantasy sports platform where players can join leagues, track stats, and compete.*  
+
+-  ✨ **[Sawtify](https://fantasyareenaleague.vercel.app/)**  
+  *AI calling agent that handles calls and scheduling*  
+
+- 📂 **[More on GitHub](https://github.com/zanib-sheikh)**  
+  *Explore my other experiments, side projects, and open-source contributions.*  
+
 
 ---
 
@@ -33,8 +43,11 @@
 
 ---
 
-## ✨ Daily Motivation
-💡 "Loading today's inspiration..."
+## ✨ Developer Vibes
+<p align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote"/>
+</p>
+
 
 <p align="center">
   <img src="https://media.tenor.com/kz8XJtZ2uUkAAAAi/sparkles-stars.gif" width="200">
