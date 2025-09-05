@@ -33,9 +33,8 @@
 
 ---
 
-## ✨ Daily Motivation  
-
-💡 <!--START_QUOTE--> "Loading today's inspiration..." <!--END_QUOTE-->
+## ✨ Daily Motivation
+💡 "Loading today's inspiration..."
 
 <p align="center">
   <img src="https://media.tenor.com/kz8XJtZ2uUkAAAAi/sparkles-stars.gif" width="200">
