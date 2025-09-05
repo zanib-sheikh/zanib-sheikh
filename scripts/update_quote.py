@@ -1,46 +1,44 @@
-#!/usr/bin/env python3
-import requests, re
+import requests
+import random
+import re
 
-README_PATH = "README.md"
-START = "<!--STARTS_HERE_QUOTE_README-->"
-END = "<!--ENDS_HERE_QUOTE_README-->"
+README_FILE = "README.md"
+
+# Fallback quotes in case API fails
+FALLBACK_QUOTES = [
+    '"The future belongs to those who believe in the beauty of their dreams." – Eleanor Roosevelt',
+    '"Do what you can, with what you have, where you are." – Theodore Roosevelt',
+    '"Believe you can and you’re halfway there." – Theodore Roosevelt',
+    '"Happiness depends upon ourselves." – Aristotle',
+    '"Stay positive, work hard, make it happen." – Unknown',
+]
 
 def fetch_quote():
-    """
-    Fetch a short quote from Quotable. If anything fails, fall back to a nice quote.
-    """
+    """Fetch quote from API, otherwise return fallback"""
     try:
-        r = requests.get("https://api.quotable.io/random?maxLength=120", timeout=12)
-        r.raise_for_status()
-        data = r.json()
-        quote = data.get("content", "").strip() or "Dream big. Start small. Act now."
-        author = data.get("author", "Unknown").strip() or "Unknown"
-        return f'> 💡 "{quote}" — {author}'
+        response = requests.get("https://zenquotes.io/api/random", timeout=10)
+        if response.status_code == 200:
+            data = response.json()
+            return f"\"{data[0]['q']}\" – {data[0]['a']}"
     except Exception:
-        # Graceful fallback (a good, professional quote)
-        return '> 💡 "The future belongs to those who believe in the beauty of their dreams." — Eleanor Roosevelt'
+        pass
+    # If API fails → return random fallback quote
+    return random.choice(FALLBACK_QUOTES)
 
-def update_block(md: str, new_block: str) -> str:
-    block = f"\n{START}\n{new_block}\n{END}\n"
-    if START in md and END in md:
-        pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
-        return pattern.sub(block.strip(), md)
-    # If markers don't exist, append a new section (safety)
-    return md + f"\n\n## ✨ Daily Motivation\n" + block
-
-def main():
-    with open(README_PATH, "r", encoding="utf-8") as f:
+def update_readme(quote):
+    with open(README_FILE, "r", encoding="utf-8") as f:
         content = f.read()
 
-    quote_md = fetch_quote()
-    updated = update_block(content, quote_md)
+    new_content = re.sub(
+        r"<!--START_QUOTE-->.*?<!--END_QUOTE-->",
+        f"<!--START_QUOTE--> {quote} <!--END_QUOTE-->",
+        content,
+        flags=re.DOTALL
+    )
 
-    if updated != content:
-        with open(README_PATH, "w", encoding="utf-8") as f:
-            f.write(updated)
-        print("README updated with a fresh quote ✨")
-    else:
-        print("No changes detected.")
+    with open(README_FILE, "w", encoding="utf-8") as f:
+        f.write(new_content)
 
 if __name__ == "__main__":
-    main()
+    quote = fetch_quote()
+    update_readme(quote)
