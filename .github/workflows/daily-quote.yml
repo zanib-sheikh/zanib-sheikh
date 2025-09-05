@@ -2,13 +2,12 @@ name: Daily Quote Updater
 
 on:
   schedule:
-    - cron: "0 5 * * *"  # Runs every day at 5:00 UTC (adjust if needed)
-  workflow_dispatch:     # Allows you to manually run the workflow
+    - cron: "0 0 * * *"   # every day at midnight UTC
+  workflow_dispatch:       # allow manual run
 
 jobs:
   update-quote:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -16,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.x"
 
       - name: Install dependencies
         run: pip install requests
@@ -24,10 +23,10 @@ jobs:
       - name: Run quote updater
         run: python scripts/update_quote.py
 
-      - name: Commit changes
+      - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "✨ Update daily motivational quote"
+          git commit -m "🔄 Update daily quote" || echo "No changes to commit"
           git push
