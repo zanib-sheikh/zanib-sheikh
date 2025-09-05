@@ -3,7 +3,7 @@ import random
 
 README_FILE = "README.md"
 
-# Fallback quotes in case API fails
+# Fallback quotes
 FALLBACK_QUOTES = [
     "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt",
     "Do what you can, with what you have, where you are. – Theodore Roosevelt",
@@ -14,37 +14,36 @@ FALLBACK_QUOTES = [
 
 def fetch_quote():
     try:
-        response = requests.get("https://zenquotes.io/api/random", timeout=10)
-        if response.status_code == 200:
-            data = response.json()
+        res = requests.get("https://zenquotes.io/api/random", timeout=10)
+        if res.status_code == 200:
+            data = res.json()
             return f"{data[0]['q']} – {data[0]['a']}"
     except Exception as e:
-        print("API failed, using fallback:", e)
+        print("⚠️ API failed, using fallback:", e)
     return random.choice(FALLBACK_QUOTES)
 
 def update_readme(quote):
     with open(README_FILE, "r", encoding="utf-8") as f:
-        content = f.read()
+        lines = f.readlines()
 
-    # Replace placeholder inside README
-    new_content = []
-    inside_motivation = False
-    for line in content.splitlines():
-        if line.strip().startswith("## ✨ Daily Motivation"):
-            inside_motivation = True
-            new_content.append(line)
-            continue
-        if inside_motivation and line.strip().startswith("💡"):
-            new_content.append(f'💡 "{quote}"')
-            inside_motivation = False
-            continue
-        new_content.append(line)
+    new_lines = []
+    found = False
+    for i, line in enumerate(lines):
+        new_lines.append(line)
+        if line.strip() == "## ✨ Daily Motivation" and i + 1 < len(lines):
+            new_lines.append(f'💡 "{quote}"\n')
+            found = True
+            # Skip the old placeholder line
+            if lines[i+1].strip().startswith("💡"):
+                continue
+
+    if not found:
+        print("⚠️ Could not find the placeholder. Please check README formatting.")
 
     with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(new_content))
+        f.writelines(new_lines)
 
 if __name__ == "__main__":
-    quote = fetch_quote()
-    update_readme(quote)
-    print("✅ Updated README with new quote:", quote)
-
+    q = fetch_quote()
+    update_readme(q)
+    print("✅ Updated README with:", q)
